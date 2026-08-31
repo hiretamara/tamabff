@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamara O. | Communications Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#" class="logo">Tamara O.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Hello, I'm a Web Developer & Writer.</h1>
+      <p>I build projects, document technical concepts, and write about modern web technology. Welcome to my personal space on the web.</p>
+    </section>
+
+    <section id="articles">
+      <h2>Featured Articles</h2>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <h3>Three Great Tools that help me as a beginner web developer</h3>
+            <p>A personal roundup of essential tools and platforms that streamline the learning curve and boost productivity for early-career developers.</p>
+          </div>
+          <a href="./articles/article-1">Read Article &rarr;</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3>How I did it: Using Gemini to write copy for my web development projects</h3>
+            <p>A practical walkthrough on leveraging generative AI to craft clear UI text, engaging landing page content, and technical descriptions.</p>
+          </div>
+          <a href="./articles/article-2">Read Article &rarr;</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3>Supporting Fellow Engineers: The Paiges Book App</h3>
+            <p>A deep dive into building an application designed to foster collaboration, knowledge sharing, and technical growth among developers.</p>
+          </div>
+          <a href="./articles/article-3">Read Article &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Connect & Get in Touch</h2>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/hiretamara" target="_blank" rel="noopener" class="social-btn">LinkedIn</a>
+        <a href="https://github.com/hiretamara" target="_blank" rel="noopener" class="social-btn">GitHub</a>
+      </div>
+
+      <form action="https://formspree.io/f/xgogkzzw" method="POST">
+           <label>
+          Your name:
+          <input type="text" name="name">
+        </label>
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created with &hearts; and Haribo Twin Snakes &#128013; by <a href="https://portfolio-link-example.com" target="_blank" rel="noopener">Tamara O.</a></p>
+  </footer>
+
+  <script>
+    // Pure Vanilla JS smooth scrolling fallback for internal navigation
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
